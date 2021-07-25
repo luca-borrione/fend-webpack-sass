@@ -1,2 +1,6 @@
-dist
+*.code-workspace
+dist/
+.DS_Store
+.history/
+info.json
 node_modules

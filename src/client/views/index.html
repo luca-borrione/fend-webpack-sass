@@ -33,7 +33,17 @@
         <footer>
             <p>This is a footer</p>
         </footer>
-
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                console.log('>> A');
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    console.log('>> B');
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     </body>
 
 </html>

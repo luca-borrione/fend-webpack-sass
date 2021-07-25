@@ -21,6 +21,10 @@ module.exports = {
       }
     ]
   },
+  output: {
+    libraryTarget: 'var',
+    library: 'Client'
+  },
   plugins: [
     // new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin({
@@ -32,7 +36,7 @@ module.exports = {
       filename: "./index.html",
     })
   ],
-  devServer: {
-    writeToDisk: true
-  }
+  // devServer: {
+  //   writeToDisk: true
+  // }
 };

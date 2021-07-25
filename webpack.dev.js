@@ -36,7 +36,7 @@ module.exports = {
       filename: "./index.html",
     })
   ],
-  // devServer: {
-  //   writeToDisk: true
-  // }
+  devServer: {
+    writeToDisk: true
+  }
 };
